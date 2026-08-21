@@ -1,0 +1,1011 @@
+/* =========================
+   GENERAL
+========================= */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    color: #12351f;
+    background: #ffffff;
+    line-height: 1.6;
+}
+
+a {
+    text-decoration: none;
+}
+
+
+/* =========================
+   HEADER
+========================= */
+
+header {
+    background: #ffffff;
+    min-height: 100px;
+    padding: 15px 6%;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+
+    box-shadow: 0 3px 15px rgba(0, 0, 0, 0.08);
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+.logo img {
+    width: 70px;
+    height: 70px;
+    object-fit: contain;
+}
+
+.logo h1 {
+    color: #075c27;
+    font-size: 24px;
+    line-height: 1.2;
+}
+
+.logo p {
+    color: #555;
+    font-size: 14px;
+    margin-top: 3px;
+}
+
+nav {
+    display: flex;
+    gap: 28px;
+}
+
+nav a {
+    color: #17351f;
+    font-weight: 600;
+    transition: 0.3s;
+}
+
+nav a:hover {
+    color: #087f23;
+}
+
+
+/* =========================
+   HERO
+========================= */
+
+.hero {
+    min-height: 600px;
+    padding: 70px 7%;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 50px;
+
+    background:
+        linear-gradient(
+            rgba(0, 90, 30, 0.82),
+            rgba(0, 90, 30, 0.82)
+        ),
+        url("images/school.jpg");
+
+    background-size: cover;
+    background-position: center;
+
+    color: white;
+}
+
+.hero-content {
+    max-width: 650px;
+}
+
+.welcome {
+    color: #ffd500;
+    font-weight: bold;
+    letter-spacing: 3px;
+    margin-bottom: 12px;
+}
+
+.hero h2 {
+    font-size: 55px;
+    line-height: 1.1;
+    margin-bottom: 25px;
+}
+
+.hero-text {
+    font-size: 19px;
+    max-width: 600px;
+    margin-bottom: 30px;
+}
+
+.hero-buttons {
+    display: flex;
+    gap: 15px;
+    flex-wrap: wrap;
+}
+
+.btn {
+    display: inline-block;
+    padding: 14px 27px;
+    border-radius: 7px;
+
+    background: #ffd500;
+    color: #17351f;
+
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+.btn:hover {
+    transform: translateY(-3px);
+}
+
+.btn.secondary {
+    background: transparent;
+    border: 2px solid white;
+    color: white;
+}
+
+
+/* =========================
+   STUDENT PORTAL
+========================= */
+
+.portal-card {
+    width: 420px;
+    max-width: 100%;
+
+    background: white;
+    color: #222;
+
+    border-radius: 14px;
+    overflow: hidden;
+
+    box-shadow: 0 15px 40px rgba(0, 0, 0, 0.25);
+}
+
+.portal-header {
+    background: #00652b;
+    color: white;
+    padding: 22px 28px;
+}
+
+.portal-header h3 {
+    font-size: 23px;
+}
+
+.portal-content {
+    padding: 12px 28px 20px;
+}
+
+.portal-welcome {
+    font-size: 18px;
+    padding: 12px 0 15px;
+}
+
+.portal-item {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+
+    color: #222;
+
+    padding: 15px 0;
+    border-top: 1px solid #e5e5e5;
+
+    font-size: 17px;
+}
+
+.portal-item span {
+    flex: 1;
+}
+
+.portal-item strong {
+    font-size: 28px;
+    font-weight: normal;
+    color: #777;
+}
+
+.portal-item:hover {
+    color: #087f23;
+}
+
+
+/* =========================
+   WHY CHOOSE US
+========================= */
+
+.why-us {
+    background: #f5faf5;
+    padding: 80px 7%;
+    text-align: center;
+}
+
+.section-title {
+    color: #087f23;
+    font-weight: bold;
+    letter-spacing: 2px;
+    margin-bottom: 8px;
+}
+
+.why-us > h2 {
+    font-size: 38px;
+    margin-bottom: 40px;
+}
+
+.features {
+    max-width: 1200px;
+    margin: auto;
+
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 25px;
+}
+
+.feature-card {
+    background: white;
+    padding: 35px 25px;
+
+    border-radius: 12px;
+
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.07);
+
+    transition: 0.3s;
+}
+
+.feature-card:hover {
+    transform: translateY(-8px);
+}
+
+.feature-icon {
+    width: 65px;
+    height: 65px;
+
+    margin: 0 auto 20px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    border-radius: 50%;
+
+    background: #e7f5e7;
+
+    font-size: 30px;
+}
+
+.feature-card h3 {
+    color: #075c27;
+    margin-bottom: 12px;
+    font-size: 20px;
+}
+
+.feature-card p {
+    color: #555;
+}
+
+
+/* =========================
+   ADMISSION
+========================= */
+
+.admission {
+    background: #087f23;
+    color: white;
+
+    text-align: center;
+
+    padding: 75px 20px;
+}
+
+.admission h2 {
+    font-size: 38px;
+    margin-bottom: 12px;
+}
+
+.admission p {
+    margin-bottom: 25px;
+}
+
+
+/* =========================
+   FOOTER
+========================= */
+
+footer {
+    background: #111;
+    color: white;
+    text-align: center;
+
+    padding: 40px 20px;
+}
+
+footer h3 {
+    color: #ffd500;
+    margin-bottom: 8px;
+}
+
+footer p {
+    color: #ccc;
+    margin: 7px 0;
+}
+
+
+/* =========================
+   TABLET
+========================= */
+
+@media (max-width: 1000px) {
+
+    .hero {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .hero-content {
+        max-width: 800px;
+    }
+
+    .hero-buttons {
+        justify-content: center;
+    }
+
+    .features {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    nav {
+        gap: 15px;
+    }
+}
+
+
+/* =========================
+   MOBILE
+========================= */
+
+@media (max-width: 700px) {
+
+    header {
+        flex-direction: column;
+        gap: 15px;
+        padding: 15px 4%;
+    }
+
+    .logo {
+        justify-content: center;
+    }
+
+    .logo img {
+        width: 60px;
+        height: 60px;
+    }
+
+    .logo h1 {
+        font-size: 19px;
+    }
+
+    nav {
+        width: 100%;
+        justify-content: center;
+        flex-wrap: wrap;
+        gap: 12px;
+    }
+
+    nav a {
+        font-size: 14px;
+    }
+
+    .hero {
+        padding: 60px 5%;
+    }
+
+    .hero h2 {
+        font-size: 38px;
+    }
+
+    .hero-text {
+        font-size: 17px;
+    }
+
+    .portal-card {
+        width: 100%;
+    }
+
+    .features {
+        grid-template-columns: 1fr;
+    }
+
+    .why-us > h2 {
+        font-size: 30px;
+    }
+
+    .admission h2 {
+        font-size: 30px;
+    }
+}
+/* =========================
+   ABOUT US PAGE
+========================= */
+
+.about-page {
+    background: #f5faf5;
+    padding: 80px 7%;
+    min-height: 600px;
+}
+
+.about-content {
+    max-width: 1000px;
+    margin: 0 auto;
+    background: white;
+    padding: 50px;
+    border-radius: 15px;
+    box-shadow: 0 5px 25px rgba(0, 0, 0, 0.08);
+}
+
+.about-content .section-title {
+    color: #087f23;
+    font-weight: bold;
+    letter-spacing: 2px;
+    margin-bottom: 10px;
+}
+
+.about-content h2 {
+    color: #075c27;
+    font-size: 38px;
+    margin-bottom: 25px;
+}
+
+.about-content h3 {
+    color: #087f23;
+    font-size: 25px;
+    margin-top: 30px;
+    margin-bottom: 10px;
+}
+
+.about-content p {
+    color: #444;
+    font-size: 17px;
+    line-height: 1.8;
+    margin-bottom: 18px;
+}
+
+
+/* ABOUT PAGE ON PHONES */
+
+@media (max-width: 700px) {
+
+    .about-page {
+        padding: 40px 5%;
+    }
+
+    .about-content {
+        padding: 30px 20px;
+    }
+
+    .about-content h2 {
+        font-size: 30px;
+    }
+
+    .about-content h3 {
+        font-size: 22px;
+    }
+
+    .about-content p {
+        font-size: 16px;
+    }
+}
+/* =========================
+   ACADEMICS PAGE
+========================= */
+
+.academics-page {
+    background: #f5faf5;
+    padding: 80px 7%;
+    min-height: 600px;
+}
+
+.academics-content {
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+.academics-content > .section-title {
+    text-align: center;
+}
+
+.academics-content > h2 {
+    text-align: center;
+    color: #075c27;
+    font-size: 38px;
+    margin-bottom: 15px;
+}
+
+.academics-content > .intro {
+    max-width: 750px;
+    margin: 0 auto 40px;
+    text-align: center;
+    color: #555;
+    font-size: 17px;
+}
+
+
+/* PROGRAM CARDS */
+
+.academics-page .academic-card {
+    background: white;
+
+    display: flex;
+    align-items: flex-start;
+    gap: 25px;
+
+    padding: 30px;
+    margin-bottom: 20px;
+
+    border-radius: 12px;
+
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.07);
+
+    transition: 0.3s;
+}
+
+.academics-page .academic-card:hover {
+    transform: translateY(-5px);
+}
+
+.academic-icon {
+    min-width: 65px;
+    height: 65px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    background: #e7f5e7;
+    border-radius: 50%;
+
+    font-size: 30px;
+}
+
+.academics-page .academic-card h3 {
+    color: #087f23;
+    font-size: 23px;
+    margin-bottom: 8px;
+}
+
+.academics-page .academic-card p {
+    color: #555;
+    line-height: 1.7;
+}
+
+
+/* GOAL BOX */
+
+.academic-message {
+    margin-top: 35px;
+
+    padding: 35px;
+
+    background: #087f23;
+    color: white;
+
+    border-radius: 12px;
+
+    text-align: center;
+}
+
+.academic-message h3 {
+    color: #ffd500;
+    font-size: 26px;
+    margin-bottom: 10px;
+}
+
+.academic-message p {
+    font-size: 17px;
+}
+
+
+/* MOBILE */
+
+@media (max-width: 700px) {
+
+    .academics-page {
+        padding: 45px 5%;
+    }
+
+    .academics-content > h2 {
+        font-size: 30px;
+    }
+
+    .academics-page .academic-card {
+        flex-direction: column;
+        text-align: center;
+        align-items: center;
+        padding: 25px 20px;
+    }
+
+    .academic-icon {
+        margin-bottom: 5px;
+    }
+
+    .academic-message {
+        padding: 28px 20px;
+    }
+}
+/* =========================
+   ADMISSIONS PAGE
+========================= */
+
+.admissions-page {
+    background: #f5faf5;
+    padding: 80px 7%;
+    min-height: 600px;
+}
+
+.admissions-content {
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+.admissions-content > .section-title {
+    text-align: center;
+}
+
+.admissions-content > h2 {
+    text-align: center;
+    color: #075c27;
+    font-size: 38px;
+    margin-bottom: 15px;
+}
+
+.admissions-intro {
+    max-width: 750px;
+    margin: 0 auto 45px;
+    text-align: center;
+    color: #555;
+    font-size: 17px;
+}
+
+
+/* ADMISSION PROCESS */
+
+.admission-info,
+.requirements,
+.application-box {
+    background: white;
+    padding: 35px;
+    margin-bottom: 25px;
+    border-radius: 12px;
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.07);
+}
+
+.admission-info h3,
+.requirements h3,
+.application-box h3 {
+    color: #087f23;
+    font-size: 25px;
+    margin-bottom: 25px;
+}
+
+.admission-step {
+    display: flex;
+    align-items: flex-start;
+    gap: 20px;
+    padding: 20px 0;
+    border-top: 1px solid #eeeeee;
+}
+
+.admission-step span {
+    min-width: 45px;
+    height: 45px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    background: #087f23;
+    color: white;
+
+    border-radius: 50%;
+    font-weight: bold;
+    font-size: 18px;
+}
+
+.admission-step h4 {
+    color: #075c27;
+    font-size: 19px;
+    margin-bottom: 5px;
+}
+
+.admission-step p {
+    color: #555;
+}
+
+
+/* REQUIREMENTS */
+
+.requirements ul {
+    padding-left: 25px;
+}
+
+.requirements li {
+    margin-bottom: 12px;
+    color: #555;
+}
+
+
+/* APPLICATION FORM */
+
+.application-box > p {
+    color: #555;
+    margin-bottom: 25px;
+}
+
+.form-group {
+    margin-bottom: 20px;
+}
+
+.form-group label {
+    display: block;
+    font-weight: bold;
+    margin-bottom: 7px;
+    color: #17351f;
+}
+
+.form-group input,
+.form-group select {
+    width: 100%;
+    padding: 13px 15px;
+
+    border: 1px solid #cccccc;
+    border-radius: 6px;
+
+    font-size: 16px;
+    font-family: inherit;
+}
+
+.form-group input:focus,
+.form-group select:focus {
+    outline: none;
+    border-color: #087f23;
+}
+
+
+/* MOBILE */
+
+@media (max-width: 700px) {
+
+    .admissions-page {
+        padding: 45px 5%;
+    }
+
+    .admissions-content > h2 {
+        font-size: 30px;
+    }
+
+    .admission-info,
+    .requirements,
+    .application-box {
+        padding: 25px 20px;
+    }
+
+    .admission-step {
+        gap: 12px;
+    }
+}
+/* =========================
+   GALLERY PAGE
+========================= */
+
+.gallery-page {
+    background: #f5faf5;
+    padding: 80px 7%;
+    min-height: 600px;
+}
+
+.gallery-content {
+    max-width: 1100px;
+    margin: 0 auto;
+}
+
+.gallery-content > .section-title {
+    text-align: center;
+}
+
+.gallery-content > h2 {
+    text-align: center;
+    color: #075c27;
+    font-size: 38px;
+    margin-bottom: 15px;
+}
+
+.gallery-intro {
+    max-width: 700px;
+    margin: 0 auto 45px;
+    text-align: center;
+    color: #555;
+    font-size: 17px;
+}
+
+.gallery-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 25px;
+}
+
+.gallery-item {
+    background: white;
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.08);
+    transition: 0.3s;
+}
+
+.gallery-item:hover {
+    transform: translateY(-7px);
+}
+
+.gallery-placeholder {
+    height: 220px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    background: #e7f5e7;
+
+    font-size: 70px;
+}
+
+.gallery-item p {
+    text-align: center;
+    color: #075c27;
+    font-weight: bold;
+    padding: 15px;
+}
+
+
+/* MOBILE */
+
+@media (max-width: 700px) {
+
+    .gallery-page {
+        padding: 45px 5%;
+    }
+
+    .gallery-content > h2 {
+        font-size: 30px;
+    }
+
+    .gallery-grid {
+        grid-template-columns: 1fr;
+    }
+}
+/* =========================
+   CONTACT PAGE
+========================= */
+
+.contact-page {
+    background: #f5faf5;
+    padding: 80px 7%;
+    min-height: 600px;
+}
+
+.contact-content {
+    max-width: 1100px;
+    margin: 0 auto;
+}
+
+.contact-content > .section-title {
+    text-align: center;
+}
+
+.contact-content > h2 {
+    text-align: center;
+    color: #075c27;
+    font-size: 38px;
+    margin-bottom: 15px;
+}
+
+.contact-intro {
+    max-width: 700px;
+    margin: 0 auto 45px;
+    text-align: center;
+    color: #555;
+    font-size: 17px;
+}
+
+.contact-layout {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 30px;
+}
+
+.contact-info,
+.contact-form {
+    background: white;
+    padding: 35px;
+    border-radius: 12px;
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.07);
+}
+
+.contact-info h3,
+.contact-form h3 {
+    color: #087f23;
+    font-size: 25px;
+    margin-bottom: 25px;
+}
+
+.contact-item {
+    display: flex;
+    align-items: flex-start;
+    gap: 18px;
+    padding: 18px 0;
+    border-top: 1px solid #eeeeee;
+}
+
+.contact-item > span {
+    font-size: 25px;
+}
+
+.contact-item h4 {
+    color: #075c27;
+    margin-bottom: 5px;
+}
+
+.contact-item p {
+    color: #555;
+}
+
+.contact-form textarea {
+    width: 100%;
+    padding: 13px 15px;
+    border: 1px solid #cccccc;
+    border-radius: 6px;
+    font-size: 16px;
+    font-family: inherit;
+    resize: vertical;
+}
+
+.contact-form textarea:focus {
+    outline: none;
+    border-color: #087f23;
+}
+
+
+/* MOBILE */
+
+@media (max-width: 700px) {
+
+    .contact-page {
+        padding: 45px 5%;
+    }
+
+    .contact-content > h2 {
+        font-size: 30px;
+    }
+
+    .contact-layout {
+        grid-template-columns: 1fr;
+    }
+
+    .contact-info,
+    .contact-form {
+        padding: 25px 20px;
+    }
+}
